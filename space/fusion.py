@@ -663,7 +663,8 @@ var_principales()
 pygame.display.set_caption("SPACE INVASION")
 
 # Musique de fond
-background = pygame.mixer.Sound("music/bg_music.wav")
+#background = pygame.mixer.Sound("music/bg_music.wav")
+pygame.mixer.music.load("music/bg_music.mp3")
 boum = pygame.mixer.Sound("music/boum.wav")
 tir = pygame.mixer.Sound("music/tir1.wav")
 tir.set_volume(0.9)
@@ -679,23 +680,23 @@ fenetre_taille = (FENETRE_LARGEUR, FENETRE_HAUTEUR)
 screen = pygame.display.set_mode(fenetre_taille)
 
 # Chargement des images et positionnement
-vaisseau = pygame.image.load("images/spaceship.png")
-arriere_plan = pygame.image.load("images/space_stars.png")
-shot = pygame.image.load("images/shot.png")
-shot2 = pygame.image.load("images/shot2.png")
+vaisseau = pygame.image.load("images/spaceship.png").convert_alpha()
+arriere_plan = pygame.image.load("images/space_stars.png").convert_alpha()
+shot = pygame.image.load("images/shot.png").convert_alpha()
+shot2 = pygame.image.load("images/shot2.png").convert_alpha()
 vaisseau_top = FENETRE_HAUTEUR - VAISSEAU_HAUTEUR - DECALAGE_VAISSEAU
 vaisseau_gauche = FENETRE_LARGEUR/2 - VAISSEAU_LARGEUR/2
-bigboss = pygame.image.load("images/bigboss.png")
-meteor = pygame.image.load("images/meteor.gif")
-coeurplein = pygame.image.load("images/coeur.png")
-coeurvide = pygame.image.load("images/coeurvide.png")
-bonusvie = pygame.image.load("images/bonuscoeur.png")
-bonusAS = pygame.image.load("images/bonusAS.png")
-bonusvite = pygame.image.load("images/sprint.png")
-bonuslent = pygame.image.load("images/snail.png")
-imagebonusAS = pygame.image.load("images/imagebonusAS.png")
-vieplus1 = pygame.image.load("images/receptacle.png")
-hexagone = pygame.image.load("images/hexagone.png")
+bigboss = pygame.image.load("images/bigboss.png").convert_alpha()
+meteor = pygame.image.load("images/meteor.gif").convert_alpha()
+coeurplein = pygame.image.load("images/coeur.png").convert_alpha()
+coeurvide = pygame.image.load("images/coeurvide.png").convert_alpha()
+bonusvie = pygame.image.load("images/bonuscoeur.png").convert_alpha()
+bonusAS = pygame.image.load("images/bonusAS.png").convert_alpha()
+bonusvite = pygame.image.load("images/sprint.png").convert_alpha()
+bonuslent = pygame.image.load("images/snail.png").convert_alpha()
+imagebonusAS = pygame.image.load("images/imagebonusAS.png").convert_alpha()
+vieplus1 = pygame.image.load("images/receptacle.png").convert_alpha()
+hexagone = pygame.image.load("images/hexagone.png").convert_alpha()
 
 
 
@@ -720,8 +721,8 @@ imagebonusAS = pygame.transform.scale(imagebonusAS, (90,90))
 introduction(True)
 
 # Mise en marche de la musique de fond (-1 = infiniment ; 0.5 = commencer à 0.5s.)
-background.play(-1)
-
+#background.play(-1)
+pygame.mixer.music.play(-1, 0.5)
 ####### BOUCLE PRINCIPALE #######
 
 
