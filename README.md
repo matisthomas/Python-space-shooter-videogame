@@ -25,4 +25,10 @@ There are some bonuses and maluses, such as :
 -MALUS :
 1) A snail, decreasing your movement speed for a limited amount of time.
 
-I aim to recreate bonuses I lost and to make the code readable, having only one 600 lines of code file wasn't the best idea we had.
+All of them are showed either in the right top corner of the game, or in a little interface at the right bottom of the game, during their activation.
+
+
+-- TO DO --
+-Losing hearts from right to left makes no sense, it has to go from left to right.
+-Make it playing again, I think we had to convert pictures in alpha or something, I'll have to look that up.
+-I aim to make the code readable, having only one 800 lines of code file wasn't the best idea we had (we didn't know yet we could separate the code in multiple files ...).
