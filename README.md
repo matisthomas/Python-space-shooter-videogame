@@ -20,7 +20,7 @@ There are some bonuses and maluses, such as :
 1) A thunder bow increasing your attack speed for a limited amount of time.
 2) A heart giving you back one of your three lifes.
 3) A heart container, giving you a new stack of heart (there is only one container, so your don't end having 600 stacks).
-4) x, increasing your movement speed for a limited amount of time. //lost, I don't have that version anymore
+4) A running boy, increasing your movement speed for a limited amount of time. //lost, I don't have that version anymore
 
 -MALUS :
 1) A snail, decreasing your movement speed for a limited amount of time.
